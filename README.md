@@ -2,6 +2,8 @@
 
 Remote desktop access to my Windows home server (`sykeshomeserver`) over the LAN using RustDesk's direct IP feature, with no public relay server involved.
 
+**Full write-up:** [Home Server Remote Access - RustDesk Direct IP Documentation](docs/MrBSykes%20Home%20Server%20Remote%20Access%20-%20RustDesk%20Direct%20IP%20Documentation.docx)
+
 ## Problem
 
 Connecting by RustDesk ID through the public server failed with:
@@ -61,3 +63,14 @@ The public server is for demo/testing only and now requires a login because of s
 - Error messages often point directly to the fix: here, the public server needed a login and the project is designed to be self-hosted.
 - Isolating each layer (listener, firewall, client) with `netstat` and `Test-NetConnection` is faster than changing settings at random.
 - Direct IP access is the simplest option when both machines are on the same network.
+
+## Repository Contents
+
+| Path | Description |
+|---|---|
+| `README.md` | Project summary, setup steps and troubleshooting checklist |
+| `docs/` | Full write-up (Word): business problem, architecture, troubleshooting log, career alignment |
+
+## Author
+
+Bryan Sykes - [GitHub](https://github.com/MrBSykes)
